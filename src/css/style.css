@@ -1,0 +1,111 @@
+body{
+    margin-top:50px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fcfcfc;
+}
+p,button,a {
+    font-family:"Arial";
+}
+h1,h3 {
+    font-family:"Sorts Mill Goudy";
+}
+img{
+    max-width:100%;
+    max-height:100%;
+    border: 1px solid black;
+}
+img.thumb{
+	max-width: 40%;
+	max-height: 40%;
+}
+a.anchor{
+	display: block;
+	position: relative;
+	top: -60px;
+	visibility: hidden;
+}
+.alert{
+	border-radius: 0px;
+	padding: 5px;
+	max-width: 25%;
+	min-width: 20%;
+	max-height: 100%;
+	display: inline-block;
+}
+.button{
+    border-radius: 0px;
+}
+.divider{
+    width:100%;
+    background:#CCC;
+    height:1px;
+    margin:10px 0px 20px 0px;
+}
+.explainer{
+    font-weight:200;
+    color:#AAA;
+    margin-bottom:10px;
+}
+.grid{
+    text-align:center;
+    font-size:10px;
+}
+.banner{
+    text-align:center;
+    padding:10px 0;
+}
+.navbar{
+background:#FAFAFA;
+}
+.navbar a{
+    color:#AAA;
+}
+.navbar a.selected{
+    color:#000;
+}
+.center{
+    text-align: center;
+}
+.auto-resizable-iframe{
+  max-width: 100%;
+  margin: 0px auto;
+}
+.auto-resizable-iframe > div{
+  position: relative;
+  padding-bottom: 75%;
+  height: 0px;
+}
+.auto-resizable-iframe iframe{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+.title{
+	display:none;
+}
+.navbar ul.pull-right{
+	text-align: center;
+	float: none;
+}
+.alert{
+	display: none;
+}
+}
+.code{
+	color:#008500;
+	background-color: #F7F7F9;
+	border: 1px solid #E1E1E8;
+}
+.controls {
+	margin-bottom: 10px;
+}
+.controls p {
+	line-height: 1.15em;
+}
+.created {
+	color: #DDD;
+	float: right;
+}
