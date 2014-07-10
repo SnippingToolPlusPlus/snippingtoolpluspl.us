@@ -432,7 +432,7 @@ blockquote.pull-right {
 /*----- 2.2 Header  -----*/
 /*----------------------------------------*/
 #header {
-	background: url(../img/patterns/body-bg.jpg) repeat #000;
+	background: url(../img/body-bg.jpg) repeat #000;
 	width: 100%;
 	padding: 20px 0px;
 }
