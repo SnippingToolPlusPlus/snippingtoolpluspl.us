@@ -1,85 +1,204 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="homepage for Snipping Tool++" />
+<meta name="keywords" content="imgur, screenshot, snipping, tool, snippingtool"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>Snipping Tool++</title>
 
-    <head>
-        <title>Snipping Tool++</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/bijou.css">
-        <link rel="stylesheet" href="/css/style.css">
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-51934264-1', 'snippingtoolpluspl.us');
-			ga('send', 'pageview');
-		</script>
-    </head>
+<!--google web font-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
 
-    <body>
-        <div class='container'>
+<!--style sheet-->
+<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
+<link rel="stylesheet" media="screen" href="css/bootstrap-responsive.css"/>
+<link rel="stylesheet" media="screen" href="css/style.css"/>
+<link rel="stylesheet" media="screen" href="css/custom.css"/>
 
-            <div class='center row'>
-                <div class='span ten'>
-                    <h1>Snipping Tool++</h1>
-                </div>
-                <div class='span ten'>
-                    <p>
-                    Snipping Tool++ is an easy to use application that allows you to quickly create and upload screenshots.
-                    </p>
-                </div>
+<!--jquery libraries / others are at the bottom-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+
+<!--elastislide carousel script starts-->
+<link rel="stylesheet" media="screen" href="css/elastislide.css"/>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#carousel').elastislide({
+		imageW 		: 300,
+		margin		: 20,
+		border		: 0,
+		easing		: 'easeInBack'
+});
+});
+</script>
+<!--elastislide carousel script ends-->
+
+<!--prettyphoto scripts starts-->
+<link rel="stylesheet" media="screen" href="css/prettyPhoto.css"/>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+		$('a[data-rel]').each(function() {
+		$(this).attr('rel', $(this).data('rel'));
+		});
+		$("a[rel^='prettyPhoto[gallery1]']").prettyPhoto({
+		animation_speed: 'fast',
+		slideshow: 5000,
+		autoplay_slideshow: false,
+		opacity: 0.80,
+		show_title: false,
+		theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+		overlay_gallery: false,
+		social_tools: false,
+		changepicturecallback: function(){
+		var $pp = $('.pp_default');
+		if( parseInt( $pp.css('left') ) < 0 ){
+		$pp.css('left', 0 );
+		}
+		}
+		});	
+});
+</script>
+<!--prettyphoto scripts ends-->
+
+<!--flexslider scripts starts-->
+<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+// Slider with thumbnail
+$(document).ready(function() {
+		$('#thumb-slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: true,
+		directionNav: false,
+		controlNav: false,
+		itemWidth: 180,
+		itemMargin: 0,
+		asNavFor: '#slider'
+		});
+		$('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		directionNav: false,
+		animationLoop: true,
+		slideshow: true,
+		sync: "#thumb-slider"
+        });
+});
+</script>
+<!--flexslider scripts ends-->
+
+</head>
+<body>
+
+<!-- content starts
+================================================== -->
+<section id="content" class="clearfix"> 
+    
+    <div class="container"> 
+        <div class="row">
+            <div class="span12">
+                <div class="logo-box"/>
             </div>
-
-            <div class='center row'>
-                <div class='span three'>
-                    <h3>Features</h3>
-                    <p>Uploads screenshots to imgur</p>
-                    <p>Places link to image in clipboard</p>
-                    <p>Runs in system tray</p>
-                    <p>Hotkey support</p>
-                    <p>Built in editor</p>
-                    <p>Saves images before uploading</p>
-                    <p>Keeps track of deletion links</p>
-                    <p><a href='http://lifehacker.com/5939784/snipping-tool%252B%252B-easily-sends-windows-screenshot-snippets-to-the-cloud'>Featured on Lifehacker</a></p>
-                </div>
-                <div class='span seven'>
-                        <div class='auto-resizable-iframe'>
-                            <div>
-                                <iframe src="//www.youtube.com/embed/8OoRMrg4u8I?wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class='center row'>
-                <div class='span ten'>
-                    <a href='/downloads/SnippingToolPlusPlus-latest.jar'>
-                        <button class='button primary large'>Download</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class='center row'>
-                <div class='span ten'>
-                    <a href='/downloads/SnippingToolPlusPlus-dev.jar'>
-                        <button class='button primary small'>Dev Build</button>
-                    </a>
-                    <a href='/downloads/archives/'>
-                        <button class='button danger small'>Previous Builds</button>
-                    </a>
-                    <a href='https://github.com/SnippingToolPlusPlus/SnippingToolPlusPlus'>
-                        <button class='button success small'>Source</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class='center row'>
-                <div class='span ten'>
-                    <p>Created by <a href='http://shaneisrael.com'>Shane</a> and <a href='http://nolat.org'>Talon</a>.</p>
-                </div>
-            </div>
-
         </div>
-    </body>
-</html>
+        <!--spacer here-->
+        <div class="spacer-40px"></div>
+        <!--features starts-->
+        <div class="row">
+            <div class="span12">
+                <h1>Upload a region of your screen in three steps.</h1>
+                <ul class="list-3col text-center">
+                    <li>
+                        <div class="icon-bg"><img src="img/icons/keyboard-2-140.png" width="80" height="80" alt="icon"></div>
+                        <h2>Press hotkey</h2>
+                        Press Ctrl-Shift-1 to begin taking a screenshot.</li>
+                    <li>
+                        <div class="icon-bg"><img src="img/icons/slider-tab-icon2.png" width="80" height="80" alt="icon"></div>
+                        <h2>Select region</h2>
+                        Select a region of your screen to capture.</li>
+                    <li>
+                        <div class="icon-bg"><img src="img/icons/slider-tab-icon5.png" width="80" height="80" alt="icon"></div>
+                        <h2>Upload</h2>
+                        Press enter to upload and get a link to the image in your clipboard. </li>
+                </ul>
+            </div>
+        </div>
+        <!--features ends--> 
 
+        <!--spacer here-->
+        <div class="spacer-40px"></div>
+		<div class="row">
+			<div class="span12">
+                <h1>Features</h1>
+			</div>
+		</div>
+        
+		<div class="row">
+			<div class="span4">
+				<h5>Uploads screenshots to imgur</h5>
+				<p>Using imgur will mean that your images will be hosted on a reliable and fast image serving network.</p>
+			</div>
+			<div class="span4">
+				<h5>Runs in system tray</h5>
+				<p>Running in your system tray allows you to easily access additional features, settings, and more.</p>
+			</div>
+			<div class="span4">
+				<h5>Quickly share links</h5>
+				<p>As soon as your image is uploaded to imgur, a link is immedietly placed in your clipboard.</p>
+			</div>
+		</div>
+
+        <!--spacer here-->
+        <div class="spacer-20px"></div>
+		<div class="row">
+			<div class="span4">
+							<h5>Hotkey support</h5>
+							<p>Use global hotkeys to quickly access a variety of features no matter what application you're working in.</p>
+			</div>
+			<div class="span4">
+							<h5>Save images locally</h5>
+							<p>Saving images to a folder means your images are safe, even if the upload fails you will have the original so you can try again.</p>
+			</div>
+			<div class="span4">
+							<h5>Remembers deletion links</h5>
+							<p>By storing the link required to delete your image, you can delete anything you accidently uploaded or just don't want online anymore.</p>
+			</div>
+		</div>
+
+        <!--spacer here-->
+        <div class="spacer-30px"></div>
+        
+        <!--box starts-->
+        <div class="row">
+            <div class="span12">
+                <div class="dark-box">
+                    <h1>Runs best on <span class="color">Windows</span>.</h1>
+                    <ul class="list-separator">
+						<li>Requires <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java 7+</a></li>
+                    </ul>
+                    <a href="downloads/SnippingToolPlusPlus-latest.jar" class="mybtn">Download</a>
+                    <a href="https://github.com/SnippingToolPlusPlus/SnippingToolPlusPlus" class="mybtn">Source</a>
+				</div>
+            </div>
+        </div>
+        <!--box ends--> 
+        
+    </div>
+</section>
+<!-- content ends
+================================================== --> 
+
+
+<!--other jqueries required--> 
+<script src="js/bootstrap.js" type="text/javascript" ></script> 
+<script src="js/ddsmoothmenu.js" type="text/javascript" ></script> 
+<script src="twitter/twitter.js" type="text/javascript" ></script> 
+<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script> 
+<script src="js/selectnav.js" type="text/javascript" ></script> 
+<script src="js/custom.js" type="text/javascript" ></script>
+</body>
+</html>
