@@ -372,13 +372,12 @@ blockquote.pull-right {
 }
 .logo-box {
 	background: #44b1d9;
-	//padding: 153px 20px 154px 20px;
 	width: auto;
 	height: 400px;
-	//text-shadow: 0px 1px 0px #000;
 	text-align: center;
-	background-image: url(../img/sample-background-logo.png), -webkit-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
-	//background-image: url(../img/sample-background-logo.png), -webkit-radial-gradient(#44b1d9 15%, #f2f2f2 70%);
+	background-image: url(../img/logo.png), -webkit-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 /*----- 3, 4, 5 column list -----*/
 .list-3col, .list-4col {
