@@ -4,6 +4,9 @@
 	height: 400px;
 	text-align: center;
 	background-image: url(../img/logo.png), -webkit-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
+	background-image: url(../img/logo.png),-o-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
+	background-image: url(../img/logo.png),-moz-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
+	background-image: url(../img/logo.png),radial-gradient(#67c5e7 0%, #f2f2f2 70%);
 	background-repeat: no-repeat;
 	background-position: center;
 }
