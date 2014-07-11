@@ -370,15 +370,6 @@ blockquote.pull-right {
 .dark-box h1, .dark-box h2, .dark-box h3, .dark-box h4, .dark-box h5, .dark-box h6 {
 	text-shadow: 0px 1px 0px #000;
 }
-.logo-box {
-	background: #44b1d9;
-	width: auto;
-	height: 400px;
-	text-align: center;
-	background-image: url(../img/logo.png), -webkit-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
-	background-repeat: no-repeat;
-	background-position: center;
-}
 /*----- 3, 4, 5 column list -----*/
 .list-3col, .list-4col {
 	margin-left: -20px;

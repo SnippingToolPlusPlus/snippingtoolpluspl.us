@@ -1,0 +1,9 @@
+.logo-box {
+	background: #44b1d9;
+	width: auto;
+	height: 400px;
+	text-align: center;
+	background-image: url(../img/logo.png), -webkit-radial-gradient(#67c5e7 0%, #f2f2f2 70%);
+	background-repeat: no-repeat;
+	background-position: center;
+}
