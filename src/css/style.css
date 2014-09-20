@@ -162,7 +162,7 @@ a:hover {
 /*----------------------------------------*/
 /*----- 1.3 Button styles -----*/
 /*----------------------------------------*/
-.mybtn, .mybtn-color, .mybtn-small, .mybtn-small-color {
+.mybtn, .mybtn-color, .mybtn-greenhov, .mybtn-small, .mybtn-small-color {
 	background: #484848;
 	padding: 10px 40px;
 	margin-top: 10px;
@@ -189,6 +189,9 @@ a:hover {
 }
 .mybtn-color, .mybtn-small-color {
 	background: #44b1d9;
+}
+.mybtn-greenhov:hover, .mybtn-small:hover{
+	background: #46A346;
 }
 .mybtn:hover, .mybtn-small:hover {
 	background: #44b1d9;
