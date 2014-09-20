@@ -261,11 +261,14 @@ a:hover {
 	display: block;
 }
 /*use suitable height' spacer to separate rows*/
-.spacer-10px, .spacer-20px, .spacer-30px, .spacer-40px {
+.spacer-10px, .spacer-20px, .spacer-30px, .spacer-40px, .spacer-60px {
 	width: 100%;
 	height: 20px;
 	display: block;
 	clear: both;
+}
+.spacer-60px {
+	height: 60px !important;
 }
 .spacer-30px {
 	height: 30px !important;
