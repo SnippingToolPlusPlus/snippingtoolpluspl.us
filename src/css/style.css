@@ -544,7 +544,7 @@ blockquote.pull-right {
 }
 .price-column {
 	font-size: 13px;
-	background:#FFFFFF;
+	background:#262626;
 	height:100%;
 	border-bottom:1px solid #e6e6e6;
 	border-top:1px solid #e6e6e6;
@@ -629,7 +629,7 @@ sup {
 }
 p.table-slug {
 	font-size: 11px;
-	color: #44b1d9;
+	color: #FFFFFF;
 	padding: 0;
 	margin-left: 20px;
 	display: block;
