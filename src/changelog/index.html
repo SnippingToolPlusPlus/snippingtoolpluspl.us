@@ -40,11 +40,44 @@
       </section>
   <section id="changelog">
       <div class="container">
-        <p>The current stable release is Snipping Tool++ <a href="#5.3.5">5.3.5</a></p>
+        <p>The current stable release is Snipping Tool++ <a href="#6.0">6.0</a>. Older versions can be found in the <a href="../downloads/archives/">archives</a></p>
 
         <p>Notice: Unfortunately we do not have a change log history for versions older than 5.0.1</p>
 
-        <h2><a name="5.3.5"></a>5.3.5 <em>Latest Stable Release</em></h2>
+        <h2><a name="6.0"></a>6.0 <em>Current Stable Release</em></h2>
+        <h3>New Features</h3>
+        <ul>
+          <li>You can now change the transparency of the overlay by scrolling up or down in an active overlay window.</li>
+          <li>You can now take new screenshots while in the overlay by middle clicking the scroll wheel. <i>(Best if used in combination with making the overlay partially transparent)</i></li>
+          <li>You can now change the default preferences data location</li>
+          <li>You can now delete uploaded snippets from Imgur by using the 'Delete' button in the Capture Viewer</li>
+        </ul>
+        <h3>General Improvements</h3>
+        <ul>
+          <li>Reduced file size</li>
+          <li>Now uses Imgur V3 API</li>
+          <li>About screen has been redesigned. Clicking it takes you to the Snipping Tool++ website</li>
+          <li>Re-designed how preference data is saved to the prefs.json file</li>
+          <li>New notification system built and implemented that better fits our vision of Snipping Tool++</li>
+          <li>Code has been refactored to better allow us to future featurs and improvements</li>
+          <li>Removed unused code</li>
+          <li>Various improvements to the version and update checker</li>
+          <li>New System Tray icon</li>
+          <li>Capture Viewer now combines uploads and captures into a single list for ease of use.</li>
+          <li>Externally editing prefs.json will now have your changes picked up when querying for preferences</li>
+          <li>Displays proper warnings if there is a headless environment or there is another instance running</li>
+          <li>Dimensions for the currently selected screen region now display next to the help message</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>Fixed issue where if no ~/.snippingtool++ folder existed the default 
+          creation would fail</li>
+          <li>Made toggling settings in PreferencesUI actually persist to disk</li>
+          <li>Fixed the editor bug that would upload all of your past uploads in your current session if you used the key combo ctrl+shift+enter</li>
+
+        </ul>
+
+        <h2><a name="5.3.5"></a>5.3.5 <em>17th Mar 2014</em></h2>
         <h3>General Improvements</h3>
         <ul>
           <li>Added ability to copy the snippet from the Editor to your clipboard directly by pressing CTRL+SHIFT+C while in the Editor</li>
