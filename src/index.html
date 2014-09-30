@@ -22,6 +22,15 @@
 	</script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=345754535502820&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<section id="content" class="clearfix"> 
 
 		<div class="container"> 
@@ -105,11 +114,18 @@
 						<a href="downloads/SnippingToolPlusPlus-6.0.0.zip" onclick="window.open('/changelog');ga('send', 'event', 'downloads', 'download', '6.0.0');" class="mybtn">Download</a>
 						<a href="https://github.com/SnippingToolPlusPlus/SnippingToolPlusPlus" class="mybtn">Source</a>
 						<a href="/donate" class="mybtn-greenhov">Donate</a>
+						<div class="list-separator"></div>
 					</div>
+<div class="dark-box">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out Snipping Tool++. The simple Imgur uploader!" data-via="snippintoolplus" data-hashtags="SnippingTool++"></a>
+    <a class="g-plusone" data-size="medium"></a>
+</div>
 				</div>
 			</div>
 
 		</div>
 	</section>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 </body>
 </html>
