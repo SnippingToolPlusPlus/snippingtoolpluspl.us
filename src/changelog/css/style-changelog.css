@@ -286,7 +286,7 @@ nav>a#nav_menu                    { display:none; }
   #free>.button,
   #header>#free_version             { display:none; }
   #free>p:after,
-  #header p:after                   { content:"To download Alfred please visit the site on your laptop or desktop machine.";display:block;margin-top:1.5em; }
+  #header p:after                   { content:"";display:block;margin-top:1.5em; }
   .developer                        { background-position:top center;display:inline-block;padding:35px 0 2px; }
 }
 
