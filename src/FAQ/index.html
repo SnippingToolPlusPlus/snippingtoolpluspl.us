@@ -1,5 +1,79 @@
-<html>
-	<body>
-	This page is currently under construction.
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style-faq.css" />
+    <link rel="stylesheet" media="screen" href="../css/style.css"/>
+    <link rel="stylesheet" media="screen" href="../css/custom.css"/>
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#faq-list h2').click(function() {
+                
+                $(this).next('.answer').slideToggle(500);
+                $(this).toggleClass('close');
+                
+            });
+        }); // end ready
+    </script>
+    
+
+</head>
+
+
+
+<body>
+
+
+<div id="wrapper">
+
+<div id="main">
+    <div class="container">
+            <h1 class="leftH1">FAQ</h1>
+            <hr />
+            <section id="faq-list">
+                <h2>Is Snipping Tool++ free?</h2>
+                <div class="answer">
+                    <p>
+                        Yes! Snipping Tool++ will remain 100% completely free to use for the foreseeable future.
+                    </p>
+                </div>
+                <h2>I have a suggestion or feedback. How can I contact you?</h2>
+                <div class="answer">
+                    <p>
+                        If you have any questions, feedback or suggestions. You can email us at <b>contact@snippingtoolpluspl.us</b>
+                    </p>
+                </div>
+            </section>
+            <hr />
+            <h1 class="leftH1">Troubleshooting</h1>
+            <hr />
+            <section id="faq-list">
+                <h2>Why do my uploads keep failing?</h2>
+                <div class="answer">
+                      <li>The size of the snippet or image you are trying to upload is exceeding Imgur's max upload file size.</li>
+                      <li>You may have exceeded Imgur's max uploads per hour. Imgur allows a max of 50 uploads every hour.</li>
+                      <li>Imgur may be down for maintenance.</li>
+                      <li>Make sure you are using the latest version of Snipping Tool++</li>
+                </div>
+            </section>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <a href="/">&larr; Return</a>
+    </div>
+</footer>
+
+
+</body>
 </html>
