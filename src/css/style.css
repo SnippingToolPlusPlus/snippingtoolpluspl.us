@@ -106,9 +106,6 @@ h1 {
 	text-align: center;
 	line-height: 1em;
 }
-h1.leftH1 {
-	text-align: left;
-}
 h2 {
 	font-size: 24px;
 }
@@ -432,7 +429,7 @@ blockquote.pull-right {
 /*----- 2.2 Header  -----*/
 /*----------------------------------------*/
 #header {
-	background: #282828;
+	background: url(../img/body-bg.jpg) repeat #000;
 	width: 100%;
 	padding: 20px 0px;
 }
