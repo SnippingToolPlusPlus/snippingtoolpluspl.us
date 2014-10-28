@@ -420,10 +420,29 @@ blockquote.pull-right {
 	margin-right: 10px;
 	float: left;
 }
+.icon-large-bg {
+	background: #44b1d9;
+	width: 160px;
+	height: 160px;
+	border-radius: 160px;
+	-moz-border-radius: 160px;
+	-webkit-border-radius: 160px;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin: 0 auto 20px auto;
+}
 .icon-bg img, .icon-small-bg img {
 	display: block;
 	margin: auto;
 	padding-top: 18px;
+}
+.icon-large-bg img {
+	display: block;
+	margin: auto;
+	padding-top: 30px;
+
 }
 /*----------------------------------------*/
 /*----- 2.2 Header  -----*/

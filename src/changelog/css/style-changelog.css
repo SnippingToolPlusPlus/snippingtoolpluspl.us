@@ -9,11 +9,10 @@ Light grey    #666666
 */
 
 /* Set up our resets ----------------------------------------------- */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-weight:normal;}ol,ul,nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}input,select{vertical-align:middle;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}input[type='submit'],input[type='button'],input[type='text'],input[type='tel'],input[type='email'],input[type='url']{font:inherit;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,hgroup,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-weight:normal;}ol,ul,nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}input,select{vertical-align:middle;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}input[type='submit'],input[type='button'],input[type='text'],input[type='tel'],input[type='email'],input[type='url']{font:inherit;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;}
 
 /* General layout setup -------------------------------------------- */
 html                              { background-color:#f2f2f2;height:100%;position:relative;width:100%; }
-section                           { padding:3.5em 1.5em; }
 hr                                { background-color:#e1e1e1;border:none;clear:both;color:#e1e1e1;height:1px;position:relative;margin:4.5em auto;max-width:480px;overflow:visible;width:100%; }
 hr:after                          { background:#fff url("../images/purple_hat.png") no-repeat 50% 50%;content:" ";left:50%;margin-left:-30px;height:17px;position:absolute;top:-8px;width:60px; }
 body>hr                           { margin:3.5em auto 1.5em; }
@@ -55,14 +54,6 @@ a:hover                           { color:#276e7a; }
 .button.power:hover               { background-color:#2e8796; }
 
 /* Header ----------------------------------------------------------- */
-#header                           { background:#6b269b url("../images/header_background.jpg") bottom left repeat-x;box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing: border-box;color:#d1a6f0;min-height:500px;position:relative;overflow:hidden;padding:7em 2em 3.5em;text-align:center;width:100%; }
-#header>div                       { left:50%;position:absolute;top:250px; }
-#header>div>strong                { display:block;margin:0.5em 0 0; }
-#header>div>.button               { padding:0;width:247px; }
-#header a                         { color:#fff; }
-#header p                         { font-size:1.4em;line-height:1.5;margin:0 auto;max-width:850px;width:100%; }
-#header b                         { color:#fff; }
-#header img                       { display:block;margin:0 auto 1.5em;max-width:381px;width:100%; }
 #free_version                     { margin-left:-470px; }
 #powerpack_version                { margin-left:223px; }
 nav                               { background-color:#5c1f87;color:#fff;height:49px;left:0;position:fixed;top:0;width:100%;z-index:100; }
