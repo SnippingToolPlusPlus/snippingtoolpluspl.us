@@ -10,3 +10,12 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    display: none;
+  }
+}
