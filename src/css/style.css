@@ -162,7 +162,7 @@ a:hover {
 /*----------------------------------------*/
 /*----- 1.3 Button styles -----*/
 /*----------------------------------------*/
-.mybtn, .mybtn-color, .mybtn-greenhov, .mybtn-small, .mybtn-small-color {
+.mybtn, .mybtn-color, .mybtn-greenhov, .mybtn-small, .mybtn-small-color, .mybtn-large {
 	background: #484848;
 	padding: 10px 40px;
 	margin-top: 10px;
@@ -183,6 +183,15 @@ a:hover {
 	-webkit-box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
 	box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
 }
+
+.mybtn-large {
+	padding: 20px 80px;
+	font-size: 25px;
+}
+.mybtn-large:hover
+{
+	background: #44b1d9;
+}
 .mybtn-small, .mybtn-small-color {
 	padding: 7px 15px 8px 15px;
 	font-size: 13px;
@@ -194,7 +203,7 @@ a:hover {
 	background: #46A346;
 }
 .mybtn:hover, .mybtn-small:hover {
-	background: #44b1d9;
+	background: #FF6600;
 }
 /*----------------------------------------*/
 /*----- 1.4 List styles -----*/
