@@ -165,9 +165,9 @@ a:hover {
 /*----------------------------------------*/
 .mybtn, .mybtn-color, .mybtn-greenhov, .mybtn-small, .mybtn-small-color, .mybtn-large {
 	background: #484848;
-	padding: 10px 40px;
+	padding: 20px 80px;
 	margin-top: 10px;
-	font-size: 18px;
+	font-size: 25px;
 	color: #fff !important;
 	line-height: 18px;
 	font-weight: 600;
@@ -378,7 +378,7 @@ blockquote.pull-right {
 }
 /*dark box*/
 .dark-box {
-	background: #282828;
+	background: #252525;
 	padding: 25px 20px 25px 20px;
 	text-shadow: 0px 1px 0px #000;
 	text-align: center;
