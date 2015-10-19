@@ -10,7 +10,8 @@
 	<meta property="og:image" content="http://snippingtoolpluspl.us/media/facebook-share.png" />
 	<meta property="og:description" content="Snipping Tool++ is a dedicated imgur snippet/screenshot uploading tool with hotkey support, local image saving, and deletion link history!" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" media="screen" href="css/bootstrap-responsive.css"/>
     <link rel="stylesheet" media="screen" href="css/bootstrap-override.css"/>
     <link rel="stylesheet" media="screen" href="css/style.css"/>
@@ -32,12 +33,13 @@
 	ga('send', 'pageview');
 	</script>
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/modernizr.js" type="text/javascript"></script>
 
 <script src="js/ddsmoothmenu.js" type="text/javascript" ></script> 
 <script src="js/selectnav.js" type="text/javascript" ></script> 
 <script src="js/custom.js" type="text/javascript" ></script>
+<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -50,7 +52,28 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=345754535502820&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
+  <!-- Modal -->
+  <div class="modal fade" id="notice" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">Notice to previous users...</h2>
+        </div>
+        <div class="modal-body">
+          <p>The current version you are downloading will reset your preferences. Before running this version, be sure to save your keyset keys (if used) under stats/keysets in the preferences dialog.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
 <!-- header starts
 ================================================== -->
 <section id="header" class="clearfix">
@@ -79,7 +102,7 @@
 ================================================== --> 
 	<section id="content" class="clearfix"> 
 
-		<div class="container"> 
+		<div class="container">
 			<div class="row">
 				<div class="span12">
 					<div class="logo-box"/>
@@ -109,12 +132,12 @@
 				</div>
 			</div>
 
-            <div class="row hide-on-mobile">
-                <div class="spacer-30px"></div>
-                <center>
-                    <iframe src="http://gfycat.com/ifr/BothSparklingAlleycat" frameborder="0" scrolling="no" width="600" height="252" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
-                </center>
-                </div>
+	        <div class="row hide-on-mobile">
+	            <div class="spacer-30px"></div>
+	            <center>
+	                <iframe src="http://gfycat.com/ifr/BothSparklingAlleycat" frameborder="0" scrolling="no" width="600" height="252" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+	            </center>
+	            </div>
 			<div class="row">
 				<div class="span12">
 					<div class="dark-box">
@@ -122,24 +145,24 @@
 						<ul class="list-separator">
 							<li>Requires <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java 7+</a></li>
 						</ul>
-                        <br>
-                        <div class="hide-on-mobile">
-                        <h2>Install via <a href="https://chocolatey.org/"><span class="color">Chocolatey!</span></a></h2>
-                        <center>
-                        <div class="nuget-badge">
-                            <p><code><span>C:\&gt; </span>choco install SnippingToolPlusPlus
-                            </code>
-                            <h2>Or if you already have it installed you can do</h2>
-                            <code><span>C:\&gt; </span>choco upgrade SnippingToolPlusPlus
-                            </code></p>
+	                    <br>
+	                    <div class="hide-on-mobile">
+	                    <h2>Install via <a href="https://chocolatey.org/"><span class="color">Chocolatey!</span></a></h2>
+	                    <center>
+	                    <div class="nuget-badge">
+	                        <p><code><span>C:\&gt; </span>choco install SnippingToolPlusPlus
+	                        </code>
+	                        <h2>Or if you already have it installed you can do</h2>
+	                        <code><span>C:\&gt; </span>choco upgrade SnippingToolPlusPlus
+	                        </code></p>
 
-                        </div>
-                        </center>
-                        <br>
-                        <h3>...or download it directly<span class="color"></span></h3>
-                        </div>
-                        <a href="https://github.com/SnippingToolPlusPlus/SnippingToolPlusPlus" class="mybtn">Source</a>
-						<a href="downloads/SnippingToolPlusPlus-6.4.5.zip" onclick="window.open('/changelog');ga('send', 'event', 'downloads', 'download', '6.4.5');" class="mybtn-large">Download</a>
+	                    </div>
+	                    </center>
+	                    <br>
+	                    <h3>...or download it directly<span class="color"></span></h3>
+	                    </div>
+	                    <a href="https://github.com/SnippingToolPlusPlus/SnippingToolPlusPlus" class="mybtn">Source</a>
+						<a href="downloads/SnippingToolPlusPlus-6.4.5.zip" onclick="ga('send', 'event', 'downloads', 'download', '6.4.5');" class="mybtn-large" data-toggle="modal" data-target="#notice">Download</a>
 						<a href="/donate" class="mybtn-greenhov">Donate</a>
 						<div class="list-separator"></div>
 
@@ -151,18 +174,18 @@
 
 			<div class="row">
 				<div id="disqus_thread"></div>
-    				<script type="text/javascript">
-        			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        			var disqus_shortname = 'snippingtoolplusplus'; // required: replace example with your forum shortname
+					<script type="text/javascript">
+	    			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	    			var disqus_shortname = 'snippingtoolplusplus'; // required: replace example with your forum shortname
 
-        			/* * * DON'T EDIT BELOW THIS LINE * * */
-        			(function() {
-            			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        			})();
-    				</script>
-    				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    			/* * * DON'T EDIT BELOW THIS LINE * * */
+	    			(function() {
+	        			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    			})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</div>
 		</div>
 	</section>
@@ -181,7 +204,5 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
     </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery.1.10.2.min.js"><\/script>')</script>
 	<script src="js/rrssb.min.js"></script>
 </html>
