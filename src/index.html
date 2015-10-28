@@ -69,7 +69,7 @@
           <p>The current version you are downloading will reset your preferences. Before running this version, be sure to save your keyset keys (if used) under stats/keysets in the preferences dialog.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" id="noticeSubmit" class="btn btn-default" data-dismiss="modal">Continue..</button>
+          <a  id="noticeSubmit" class="btn btn-default" data-dismiss="modal" target="_blank">Continue..</a>
         </div>
       </div>
       
@@ -164,7 +164,7 @@
 	                    <h3>...or download it directly<span class="color"></span></h3>
 	                    </div>
 	                    <a href="https://github.com/SnippingToolPlusPlus/SnippingToolPlusPlus" class="mybtn">Source</a>
-						<a onclick="ga('send', 'event', 'downloads', 'download', '6.4.5');" class="mybtn-large" data-toggle="modal" data-target="#notice">Download</a>
+						<a href="downloads/SnippingToolPlusPlus-6.4.5.zip" onclick="ga('send', 'event', 'downloads', 'download', '6.4.5');" class="mybtn-large" id="downloadButton" data-target="#notice">Download</a>
 						<a href="/donate" class="mybtn-greenhov">Donate</a>
 						<div class="list-separator"></div>
 
