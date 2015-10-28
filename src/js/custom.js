@@ -8,6 +8,12 @@ selectnav('nav', {
     indent: '-'
 }); 
 
+//bootstrap modal
+$('#notice').on('hidden.bs.modal', function (e) {
+  // do something...
+   window.open('downloads/SnippingToolPlusPlus-6.4.5.zip');
+})
+
 //accordion	
 $(".collapse").collapse()
 
